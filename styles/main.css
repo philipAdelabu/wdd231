@@ -1,0 +1,107 @@
+:root{
+  --primary-color: #;
+  --seconday-color: #;
+  --first-level-color: #0e0d0d;
+  --second-level-color: #c7c7c7;
+  --third-level-color: #a59d9d;
+  --quiet-accent: #;
+  --loud-accent: #;
+  --body-font: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 10px;
+    font-family: var(--body-font);
+}
+
+nav{
+    background-color: var(--first-level-color);
+    padding: 4px;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--third-level-color);
+}
+
+.card{
+    background-color: var(--second-level-color);
+    margin:20px 0px;
+    padding-bottom: 20px;
+}
+
+.card > h2 {
+    margin: 0px;
+}
+
+.h2-heading {
+    background-color: var(--first-level-color);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;  
+    padding: 8px;
+}
+
+
+.card > p{
+    padding: 30px;
+} 
+
+#profile-photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: var(--third-level-color);
+    margin-top: 10px;
+}
+
+.certificate, .wdd {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.certificate {
+  flex-flow: row; 
+  margin-bottom: 10px; 
+}
+
+.wdd {
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+.certificate > div, .wdd > div {
+    border-radius: 4px;
+    background-color: var(--second-level-color);
+    font-weight: bolder;
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.wdd > div {
+   width: 100%;
+}
+
+.certificate > div {
+    width: 30%;
+}
+
+
+footer{
+    background-color: var(--second-level-color);
+}
