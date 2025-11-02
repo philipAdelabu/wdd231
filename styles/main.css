@@ -217,6 +217,11 @@ main{
     margin-top: 30px;
 }
 
+#social-link > h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
 a {
     text-decoration: none;
 }
