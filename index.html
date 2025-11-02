@@ -14,7 +14,6 @@
         <link href="styles/main.css" rel="stylesheet">
         <link href="styles/main-large.css" rel="stylesheet">
         <script src="scripts/menu.js" defer></script>
-        <script src="scripts/timeUpdate.js" defer></script>
     </head>
     <body>
         <header>
@@ -58,19 +57,15 @@
               <section>
                 <h2 class="h2-heading">Web Certificate Courses</h2>
                 <div class="certificate">
-                    <div>All</div>
-                    <div>CSE</div>
-                    <div>WDD</div>
+                    <div class="certs">ALL</div>
+                    <div class="certs">CSE</div>
+                    <div class="certs">WDD</div>
                 </div>
-                <div class="wdd">
-                    <div>WDD 130</div>
-                    <div>WDD 131</div>
-                    <div>WDD 231</div>
-                </div>
+                <div class="courses"></div>
 
               </section>
               <section id="social-link">
-                <span>The total credits course listed above is 6</span>
+                 <span id="credits"></span>
                   <div>
                       <span class="fa fa-linkedin"></span>
                       <span class="fa fa-github"></span>
@@ -85,8 +80,9 @@
             </p>
             
         </footer>
-
-        <script src="scripts/menu.js"></script>
+        
+   
+        <script src="scripts/courseList.js"></script>
         <script src="scripts/timeUpdate.js"></script>
     </body>
 </html>
