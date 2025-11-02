@@ -1,11 +1,11 @@
 :root{
-  --primary-color: #;
-  --seconday-color: #;
+  --primary-color: #403ebd;
+  --seconday-color: #3f446d;
   --first-level-color: #0e0d0d;
   --second-level-color: #dbd8d8;
   --third-level-color: #a59d9d;
-  --quiet-accent: #;
-  --loud-accent: #;
+  --quiet-accent: #3d3838;
+  --loud-accent: #330f0f;
   --body-font: "Roboto", sans-serif;
 }
 
@@ -203,11 +203,14 @@ main{
     margin: 30px 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .fa {
     font-size: 50px;
     margin: 5px;
     color: #000;
-    text-decoration: none;
 }
 
 
@@ -215,4 +218,5 @@ footer{
     background-color: var(--second-level-color);
     text-align: center;
     padding: 15px;
+    font-size: 12px;
 }
