@@ -12,28 +12,38 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/main-large.css" rel="stylesheet">
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/timeUpdate.js" defer></script>
     </head>
     <body>
         <header>
-             <div>
-                <div>
-                    <img id="img-logo" src="images/logo.jpg" alt="Logo" width="80px" height="80px"> 
-                     <span>Site Name</span>
+             <div id="header-logo">
+                <div id="title">
+                    <img id="img-logo" src="images/nigeria-flag.jpg" alt="Logo" width="60px" height="40px"> 
+                    <span>Commerce</span>
                 </div>
-                 <div> X </div>
+                <div></div>
+                 <div id="menu"> 
+                      <div id="menu-cross"> x </div>
+                      <div id="line-menu">
+                         <div class="menu-line"></div>
+                         <div class="menu-line"></div>
+                         <div class="menu-line"></div>
+                      </div>
+                 </div>
+                
             </div>
              
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Chamber Project</a></li>
-                    <li><a href="#">Final Project</a></li>
-                </ul> 
+            <nav id="menu-nav">
+               <a href="#">Home</a>
+               <a href="#">Chamber Project</a>
+               <a href="#">Final Project</a>
             </nav>
         </header>
         <main>
               <h1>Home</h1>
-              <section>
+              <section id="about-info">
                 <div class="card">
                     <h2 class="h2-heading">About Me</h2>
                     <p>

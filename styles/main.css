@@ -2,7 +2,7 @@
   --primary-color: #;
   --seconday-color: #;
   --first-level-color: #0e0d0d;
-  --second-level-color: #c7c7c7;
+  --second-level-color: #dbd8d8;
   --third-level-color: #a59d9d;
   --quiet-accent: #;
   --loud-accent: #;
@@ -23,38 +23,111 @@ header {
     margin: 10px 0px;
 }
 
+
+
+#header-logo {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    border-bottom: 1px solid var(--first-level-color);
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#header-logo:first-child {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+
 main{
     padding: 10px;
 }
 
-nav{
+#title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#title > img {
+    margin-right: 8px;
+}
+
+#title > span {
+    font-weight: bold;
+}
+
+
+/* Nav bar section */
+
+#menu-nav  {
    width: 100%;  
-   margin-top: 10px;
+    background-color: var(--first-level-color);
+    display: none;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
-nav > ul {
-    padding-left: 0px;
-}
 
-nav > ul li {
-     background-color: var(--first-level-color);
-     padding: 8px;
-     list-style-type: none;
-     border: 1px solid #1f0909;
-}
 
-nav a {
+#menu-nav a {
+    padding: 20px;
+    list-style-type: none;
+    border-bottom: 1px solid #3d3939;
     color: #fff;
     text-decoration: none;
+    width: 100%;
 }
 
-nav > ul li:hover{
+
+
+#menu-nav a:hover{
     background-color: var(--third-level-color);
+    color: #000;
     cursor: pointer;
+    font-weight: bold;
 }
 
-nav > ul li:active {
-    background-color: var(--third-level-color);
+
+/* Menu section */
+/* -------------*/
+ 
+#menu {
+    border: 1px solid var(--first-level-color);
+    justify-items: center;
+    text-align: center;
+    font-weight: bolder;
+    width: fit-content;
+    padding: 10px;
+    background-color: #eee;
+    margin-right: 8px;
+}
+
+#menu-cross {
+    font-size: 35px;
+    display: none;
+    padding: 0px 10px;
+}
+
+#line-menu {
+    display: block;
+}
+
+.menu-line{
+    border-top: 6px solid var(--first-level-color);
+    height: 2px;
+    width: 40px;
+    margin-top: 2px;
 }
 
 .card{
