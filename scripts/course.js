@@ -81,22 +81,26 @@ const courses = [
 let credits = 0;
 let selectedCourses = [];
 const certs = document.querySelectorAll('.certs');
+const courseDiv = document.querySelector('.courses');
+
 certs.forEach( div => {
    div.addEventListener('click', () => {
       const text = div.textContent;
-      const courseDiv = document.querySelector('.courses');
+      courseDiv.innerHTML = '';
+      credits = 0;
       const narr = getArray(courses, text);
-      narr.forEach(item => {
-        if(selectedCourses.indexOf(item.subject+""+item.number) < 0){    
+      narr.forEach(item => {    
         const element = document.createElement('div');
         if(item.completed === true){
             element.style.backgroundColor = '#096829';
-            credits += item.credits;
         }
+        credits += item.credits;
+        element.setAttribute('class', 'selected-course');
         element.textContent = item.subject + " " + item.number;
-        courseDiv.appendChild(element);
-        selectedCourses.push(item.subject+""+item.number);
-        }
+        element.addEventListener('click', ()=>{
+             document.getElementById('credits').innerHTML = 'The credits of the selected course above is ' + item.credits; 
+        });
+        courseDiv.appendChild(element);    
       });
       document.getElementById('credits').innerHTML = credits > 0 ? 'The total credits course listed above is '+ credits : ''; 
    });

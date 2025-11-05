@@ -2,7 +2,7 @@
   --primary-color: #403ebd;
   --seconday-color: #3f446d;
   --first-level-color: #0e0d0d;
-  --second-level-color: #dbd8d8;
+  --second-level-color: #f5f3f3;
   --third-level-color: #a59d9d;
   --quiet-accent: #3d3838;
   --loud-accent: #330f0f;
@@ -94,7 +94,7 @@ main{
 
 
 #menu-nav a:hover{
-    background-color: var(--third-level-color);
+    background-color: var(--second-level-color);
     color: #000;
     cursor: pointer;
     font-weight: bold;
@@ -193,6 +193,10 @@ main{
    padding: 5px;
    color: #fff;
    background-color: var(--danger);
+}
+
+.selected-course:hover {
+    cursor: pointer;
 }
 
 
