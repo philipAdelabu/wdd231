@@ -19,14 +19,21 @@
 
      #about-info{
         display: grid;
-        grid-template-columns:  2fr 1fr;
+        grid-template-columns:  2fr 1fr 1fr;
         grid-gap: 20px;
      }
 
-     .courses {
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-gap: 8px;
+     
+     .business-cards{
+      display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+
+     footer{
+      grid-template-columns: 1fr 1fr 1fr;
+     }
+     .h2-heading {
+      text-align: left;
      }
 
 }

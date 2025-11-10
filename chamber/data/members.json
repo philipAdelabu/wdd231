@@ -1,0 +1,15 @@
+[
+    {
+        "name":"",
+        "address": "",
+        "phone": "",
+        "web-url": "",
+        "image":"",
+        "membership": {
+            "member":1,
+            "silver":2,
+            "gold":3
+        },
+        "other":""
+    }
+]
