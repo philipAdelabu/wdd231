@@ -9,13 +9,32 @@
 
  
      #menu-nav {
-        display: block;
+        display: flex;
+        flex-direction: row;
         padding: 20px 0px;
+        background-color: #fff;
+       justify-content: flex-end;
+       width: 40%;
+       margin-right: 10px;
+       position: static;
      }
 
-     #menu-nav a {
-        border: 0px;
-     }
+
+   #menu-nav a {
+      list-style-type: none;
+      color: #000;
+      text-decoration: none;
+      border-bottom: none;
+   }
+
+
+
+   #menu-nav a:hover{
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #0e0d0d;;
+   }
 
      #about-info{
         display: grid;
@@ -23,10 +42,20 @@
         grid-gap: 20px;
      }
 
+     #hero {
+      width: 90%;
+      }
+
      
      .business-cards{
       display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .business-cards-list {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
    }
 
      footer{

@@ -17,6 +17,7 @@
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/course.js" defer></script>
         <script src="scripts/time.js" defer></script>
+        <script src="scripts/gridlist.js" defer></script>
     </head>
     <body>
         <header>
@@ -25,7 +26,14 @@
                     <img id="img-logo" src="images/nigeria-flag.jpg" alt="Logo of the website" width="60" height="40"> 
                     <span>Commerce</span>
                 </div>
-                <div></div>
+             
+                 <nav id="menu-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Chamber</a>
+                    <a href="#">Final</a>
+                    <a href="#">Contact</a>
+                </nav>
+
                  <div id="menu"> 
                       <div id="menu-cross"> x </div>
                       <div id="line-menu">
@@ -34,19 +42,10 @@
                          <div class="menu-line"></div>
                       </div>
                  </div>
-                 <nav id="menu-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Chamber</a>
-                    <a href="#">Final</a>
-                    <a href="#">Contact</a>
-                </nav>
                 
             </div>
-             
-            
-           
-                <img id="hero" src="" alt="" loading="lazy" height="" width="">
-            
+            <img id="hero" src="images/hero.png" alt="Hero image for the Chamber commerce" loading="lazy" height="400" width="900">
+               
         </header>
         <main>
         
@@ -60,8 +59,8 @@
                 </div>
                 <div class="card">
                     <h2 class="h2-heading">Current Weather</h2>
-                    <div>
-                        <img id="moon-cloud" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="50" width="50">
+                    <div class="weather">
+                        <img id="moon-cloud" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="70" width="70">
                         <p>
                             75<sup>o</sup>F<br>
                             Party Cloudy <br>
@@ -76,8 +75,7 @@
                 </div>
                 <div class="card">
                     <h2 class="h2-heading">Weather Forecast</h2>
-                    <div>
-                        <span id="icon"></span>
+                    <div class="weather">
                         <p>
                               Today: 20<sup>o</sup><br>
                               Wednesday: 54<sup>o</sup><br>
@@ -87,9 +85,16 @@
                 </div>
               </section>
 
-              <section class="business-cards">
+              <section>
+                  <div id="toggle">
+                    <div id="grid" class="toggle-button">Grid</div>
+                    <div id="list" class="toggle-button">List</div>
+                  </div>
+              </section>
+
+              <section id="display" class="business-cards-list">
                 <div class="business-card">
-                    <div class="businsess-card-header">
+                    <div class="business-card-header">
                          <h3>Business Name</h3>
                           <span>Business Tag Line</span>
                     </div>
@@ -104,7 +109,7 @@
                 </div>
 
                  <div class="business-card">
-                    <div class="businsess-card-header">
+                    <div class="business-card-header">
                          <h3>Business Name</h3>
                           <span>Business Tag Line</span>
                     </div>
@@ -119,7 +124,7 @@
                 </div>
 
                  <div class="business-card">
-                    <div class="businsess-card-header">
+                    <div class="business-card-header">
                          <h3>Business Name</h3>
                           <span>Business Tag Line</span>
                     </div>

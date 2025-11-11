@@ -71,8 +71,8 @@ main{
 
 /* Nav bar section */
 
-#menu-nav  {
-   width: 100%;  
+#menu-na {
+    width: 100%;  
     background-color: var(--first-level-color);
     display: none;
     flex-direction:column;
@@ -82,11 +82,33 @@ main{
 }
 
 
+#menu-nav  {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+    width: 40%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--first-level-color);
+    animation: slideFromRight 1s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 #menu-nav a {
     padding: 20px;
     list-style-type: none;
-    border-bottom: 1px solid #3d3939;
     color: #fff;
     text-decoration: none;
     width: 100%;
@@ -151,6 +173,22 @@ main{
     padding: 8px;
 }
 
+#hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+}
+
+.card > .weather {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
 
 .card > p{
     padding: 30px;
@@ -164,9 +202,29 @@ main{
     margin-top: 10px;
 }
 
+#toggle {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--first-level-color);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px; 
+}
 
+.toggle-button {
+    padding: 14px 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    margin: 20px 10px;
+}
 
-
+.toggle-button:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
 
 #social-link{
     text-align: center;
@@ -195,7 +253,8 @@ a {
 .business-cards{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 5px;
+    grid-gap: 20px;
+    justify-content: space-around;
 }
 
 .business-cards > div{
@@ -205,13 +264,32 @@ a {
 .business-card {
     border: 1px solid #000;
     padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.business-card-header {
+    border-bottom: 1px solid var(--second-level-color);
     text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+
+.business-card-detail{
+    display: flex;
+    align-items: center;
+}
+
+.business-card-detail > p {
+    margin-left: 0px;
 }
 
 .business-card img {
     border: 1px solid red;
     width: 100px;
     height: 100px;
+    margin: 5px;
+    margin-right: 20px;
 }
 
 .list-cards {
