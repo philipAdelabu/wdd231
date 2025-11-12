@@ -40,7 +40,7 @@ const getData = async () => {
             */
 
 const showData = async () => {
-    const response = await fetch('http://127.0.0.1:5500/chamber/data/members.json'); // fetching the data, a request
+    const response = await fetch('https://philipadelabu.github.io/wdd231/chamber/data/members.json'); // fetching the data, a request
     const data = await response.json(); //  parse the JSON data
     if(data){
      const section = document.getElementById('display');
