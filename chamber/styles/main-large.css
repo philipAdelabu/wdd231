@@ -14,7 +14,7 @@
         padding: 20px 0px;
         background-color: #fff;
        justify-content: flex-end;
-       width: 40%;
+       width: fit-content;
        margin-right: 10px;
        position: static;
      }
@@ -46,10 +46,14 @@
       width: 90%;
       }
 
-     
+      
      .business-cards{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .business-card {
+       width: 94%;
    }
 
    .business-cards-list {
@@ -58,9 +62,18 @@
       width: 90%;
    }
 
-     footer{
+   .business-cards-list .business-card {
+      margin-top: 20px;
+   }
+
+   .business-cards-list  .business-card-detail {
+      width: 60%;
+   }
+
+     footer {
       grid-template-columns: 1fr 1fr 1fr;
      }
+
      .h2-heading {
       text-align: left;
      }

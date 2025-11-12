@@ -11,11 +11,11 @@
   --danger: #851414;
 }
 
+
 *{
     margin: 0 auto;
     box-sizing: border-box;
 }
-
 
 body{
     margin: 0 auto;
@@ -25,8 +25,6 @@ body{
 header {
     margin: 10px 0px;
 }
-
-
 
 #header-logo {
     display: flex;
@@ -70,18 +68,6 @@ main{
 
 
 /* Nav bar section */
-
-#menu-na {
-    width: 100%;  
-    background-color: var(--first-level-color);
-    display: none;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-
-
 #menu-nav  {
     position: absolute;
     top: 85px;
@@ -115,7 +101,6 @@ main{
 }
 
 
-
 #menu-nav a:hover{
     background-color: var(--second-level-color);
     color: #000;
@@ -125,8 +110,7 @@ main{
 
 
 /* Menu section */
-/* -------------*/
- 
+/* -------------*/ 
 #menu {
     border: 1px solid var(--first-level-color);
     justify-items: center;
@@ -139,7 +123,7 @@ main{
 }
 
 #menu-cross {
-    font-size: 35px;
+    font-size: 28px;
     display: none;
     padding: 0px 10px;
 }
@@ -250,6 +234,30 @@ a {
     color: #000;
 }
 
+.business-cards-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.business-cards-list  .business-card {
+      width: 98%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .business-cards-list h3, span {
+    font-size: 14px;
+   }
+
+   .business-cards-list img {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+   }
+
+
 .business-cards{
     display: grid;
     grid-template-columns: 1fr;
@@ -257,15 +265,18 @@ a {
     justify-content: space-around;
 }
 
-.business-cards > div{
-    margin: 0px;
-}
 
 .business-card {
-    border: 1px solid #000;
     padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: 4px;
+     box-shadow: 5px 4px 3px  4px rgba(0, 0, 0, 0.4);
+     width: 70%;
+}
+
+.business-card ul {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 12px;
 }
 
 .business-card-header {
@@ -285,11 +296,10 @@ a {
 }
 
 .business-card img {
-    border: 1px solid red;
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .list-cards {
@@ -302,5 +312,5 @@ footer{
     grid-template-columns: 1fr;
     background-color: var(--second-level-color);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }

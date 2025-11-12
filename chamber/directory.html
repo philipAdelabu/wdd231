@@ -5,8 +5,13 @@
         <meta name="viewport"  content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Philip Adelabu"> 
         <meta name="description" content="A website to demonstrate the how chamber of commerce works.">
-        
+        <meta property="og:title" content="Nigeria Chamber Commerce">
+        <meta property="og:description" content="The Nigeria Chamber Commerce for small scale business owners">
+        <meta property="og:image" content="chamber/images/logos/logo1.png">
+        <meta property="og:locale" content="https://127.0.0.0.1/chamber">
+
         <title>Chamber of Commerce</title>
+        <link rel="icon" href="images/logo.ico" type="image/x-icon">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +23,7 @@
         <script src="scripts/course.js" defer></script>
         <script src="scripts/time.js" defer></script>
         <script src="scripts/gridlist.js" defer></script>
+        <script src="scripts/getdata.js" defer></script>
     </head>
     <body>
         <header>
@@ -29,9 +35,11 @@
              
                  <nav id="menu-nav">
                     <a href="#">Home</a>
-                    <a href="#">Chamber</a>
-                    <a href="#">Final</a>
-                    <a href="#">Contact</a>
+                    <a href="#">Discover</a>
+                    <a href="#">Directory</a>
+                    <a href="#">Join</a>
+                    <a href="#">About</a>
+                    <a href="#">Podcast</a>
                 </nav>
 
                  <div id="menu"> 
@@ -44,7 +52,7 @@
                  </div>
                 
             </div>
-            <img id="hero" src="images/hero.png" alt="Hero image for the Chamber commerce" loading="lazy" height="400" width="900">
+            <img id="hero" src="images/banners/banner.jpg" alt="Hero image for the Chamber commerce" loading="lazy" height="400" width="900">
                
         </header>
         <main>
@@ -91,57 +99,7 @@
                     <div id="list" class="toggle-button">List</div>
                   </div>
               </section>
-
-              <section id="display" class="business-cards-list">
-                <div class="business-card">
-                    <div class="business-card-header">
-                         <h3>Business Name</h3>
-                          <span>Business Tag Line</span>
-                    </div>
-                    <div class="business-card-detail">
-                        <img src="" alt="" height="" width="" loading="lazy">
-                        <p>
-                            <strong>EMAIL:</strong> info@gmail.com<br>
-                            <strong>PHONE:</strong> 800-090-8833 <br>
-                            <strong>URL:</strong> mybusiness.com <br>
-                        </p>
-                    </div>
-                </div>
-
-                 <div class="business-card">
-                    <div class="business-card-header">
-                         <h3>Business Name</h3>
-                          <span>Business Tag Line</span>
-                    </div>
-                    <div class="business-card-detail">
-                        <img src="" alt="" height="" width="" loading="lazy">
-                        <p>
-                            <strong>EMAIL:</strong> info@gmail.com<br>
-                            <strong>PHONE:</strong> 800-090-8833 <br>
-                            <strong>URL:</strong> mybusiness.com <br>
-                        </p>
-                    </div>
-                </div>
-
-                 <div class="business-card">
-                    <div class="business-card-header">
-                         <h3>Business Name</h3>
-                          <span>Business Tag Line</span>
-                    </div>
-                    <div class="business-card-detail">
-                        <img src="" alt="" height="" width="" loading="lazy">
-                        <p>
-                            <strong>EMAIL:</strong> info@gmail.com<br>
-                            <strong>PHONE:</strong> 800-090-8833 <br>
-                            <strong>URL:</strong> mybusiness.com <br>
-                        </p>
-                    </div>
-                </div>
-
-              </section>
-
-      
-            
+              <section id="display" class="business-cards-list"></section> 
         </main>
         <footer>
              <div>
@@ -159,7 +117,7 @@
                 <span class="fa fa-twitter"></span>
              </div>
              <div>
-                 <p>&copy; | Philip Adelabu | Nigeria, Lagos</p>
+                 <p>&copy; | Philip Adelabu | Lagos, Nigeria</p>
                  <p><span id="lastModified"></span> <span id="currentyear"></span></p>
              </div>
         </footer>
