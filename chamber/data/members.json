@@ -45,7 +45,7 @@
         "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo4.png",
         "membership": {
-            "member":true,
+            "member":false,
             "silver":false,
             "gold":true
         },
