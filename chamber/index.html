@@ -23,8 +23,8 @@
         <script src="scripts/course.js" defer></script>
         <script src="scripts/time.js" defer></script>
         <script src="scripts/gridlist.js" defer></script>
-        <script src="scripts/getdata.js" defer></script>
-        <script src="scripts/weather.js" defer></script>
+        <script type="module" src="scripts/randmember.js"></script>
+        <script src="scripts/getweather.js" defer></script>
     </head>
     <body>
         <header>
@@ -68,19 +68,21 @@
                 <div class="card">
                     <h2 class="h2-heading">Current Weather</h2>
                     <div class="weather">
-                        <img id="moon-cloud" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="70" width="70">
-                        <p id="temperature"></p>
-                        <p id="description"></p>
-                        <p id="humidity"></p>
+                        <img id="moon-cloud" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="40" width="40">
+                        <p>
+                            <span id="temperature"></span><br>
+                            <span id="description"></span><br>
+                            <span id="humidity"></span><br>
+                       </p>
                     </div>
                 </div>
                 <div class="card">
                     <h2 class="h2-heading">Weather Forecast</h2>
                     <div class="weather">
                         <p>
-                              Today: 20<sup>o</sup><br>
-                              Wednesday: 54<sup>o</sup><br>
-                              Thursday: 32<sup>o</sup><br>
+                             <span id="day1-temp"></span>
+                             <span id="day2-temp"></span>
+                             <span id="day3-temp"></span>
                          </p>
                     </div>
                 </div>

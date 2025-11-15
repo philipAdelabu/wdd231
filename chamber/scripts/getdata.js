@@ -39,13 +39,38 @@ const getData = async () => {
                 },
             */
 
-const showData = async () => {
+export const showData = async (display='display', cnt=0, random=false, filter=false) => {
     const response = await fetch('https://philipadelabu.github.io/wdd231/chamber/data/members.json'); // fetching the data, a request
     const data = await response.json(); //  parse the JSON data
+    if(cnt == 0) cnt = data.length;
     if(data){
-     const section = document.getElementById('display');
+     const section = document.getElementById(display);
+      if(random == true){
+            var i = 1;
+            var id = Math.floor(Math.random() * data.length);
+            let usedid = [];
+            usedid.push(id);
+            while(i <= cnt){
+                if((data[id].membership.gold || data[id].membership.silver)){
+                    parseData(data[id], section);
+                    i++;
+                }
+                id = Math.floor(Math.random() * data.length);
+                while(usedid.includes(id))
+                    id = Math.floor(Math.random() * data.length);
+               usedid.push(id);    
+            }
+        }else {
      data.forEach(element => {
-        const div1 = document.createElement('div');
+        parseData(element, section);
+      });
+    }
+   }
+}
+
+
+function parseData(element, sect){
+    const div1 = document.createElement('div');
         const div2 = document.createElement('div');
         const div3 = document.createElement('div');
         const h3 = document.createElement('h3');
@@ -84,11 +109,12 @@ const showData = async () => {
         div3.appendChild(ul);
         div1.appendChild(div2);
         div1.appendChild(div3);
-        section.appendChild(div1);
-      });
-    }
-   
+        sect.appendChild(div1);
 }
 
 
-showData();
+//showData();
+
+const dirdisplay = document.querySelector('#dir-display');
+if(dirdisplay != undefined)
+    showData('dir-display');

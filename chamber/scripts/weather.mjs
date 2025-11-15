@@ -6,20 +6,24 @@
  const apikey = "9a96722a702555a9a431e0dc0783d7ab";
  const city = "Lagos";
  const country = "Nigeria";
- const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}, ${country}&appid=${apikey}`;
+ const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}, ${country}&appid=${apikey}&units=imperial`;
   
 
- async function getWeather() {
+ export async function getWeather() {
     try{
      const response = await fetch(url);
      if(response.ok) {
      const weatherData = await response.json();
      if(weatherData){
      console.log(weatherData);
-     document.getElementById("temperature").innerHTML = `Temparature: <strong>${weatherData.main.temp.toFixed(0)} &deg;F</strong>`;
-     document.getElementById("description").innerHTML = `Description: <strong>${weatherData.weather[0].description}</strong>`;
-     document.getElementById("humidity").innerHTML = `Humidity: <strong>${weatherData.main.humidity}%</strong>`;
+     document.getElementById("temperature").innerHTML = `<strong>${weatherData.main.temp.toFixed(0)} &deg;F</strong>`;
+     document.getElementById("description").innerHTML = `<strong>${weatherData.weather[0].description}</strong>`;
+     document.getElementById("humidity").innerHTML = `<strong>Humidity: ${weatherData.main.humidity}%</strong>`;
  
+     const iconcode = weatherData.weather[0].icon;
+     const iconurl = `https://openweathermap.org/img/w/${iconcode}.png`;
+     document.getElementById("weathericon").setAttribute("src", iconurl);
+     document.getElementById("weathericon").setAttribute("alt", weatherData.weather[0].description);
     }else{
         throw Error(await response.text());
     }
@@ -33,27 +37,20 @@
 
  /* Get the 3-day forecast */   
 
- const d = new Date();
-const tday = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+ const date = new Date();
+const today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
 function getDayName(offset) {
-    const day = new Date(tday);
-    day.setDate(tday.getDate() + offset);
+    const day = new Date(today);
+    day.setDate(today.getDate() + offset);
     return day.toLocaleDateString('en-US', { weekday: 'long' });
 }
 
 
 
- /* api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=9a96722a702555a9a431e0dc0783d7ab */
- /* api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}  */
+const forecasturl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}, ${country}&cnt=3&appid=${apikey}&units=imperial`;    
 
-const lat = "6.52";
-const lon = "3.37";
-const cnt = 3;
-const forecasetKey = "2cf87d0ad00f6417c56743d6382dae18";
-const forecasturl = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt=${cnt}&appid=${apikey}`;
-
-async function getForecast() {  
+ export async function getForecast() {  
     
     const day1Name = getDayName(0);
     const day2Name = getDayName(1);
@@ -85,6 +82,5 @@ async function getForecast() {
    } 
  }
 
-getForecast();
-getWeather();
+
 
