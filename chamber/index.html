@@ -10,7 +10,7 @@
         <meta property="og:image" content="https://philipadelabu.github.io/wdd231/chamber/images/banners/banner2.jpg">
         <meta property="og:url" content="https://philipadelabu.github.io/wdd231/chamber/directory.html">
 
-        <title>Nigeria Chamber of Commerce Directory</title>
+        <title>Nigeria Chamber of Commerce Home Page</title>
         <link rel="icon" href="images/logo.ico" type="image/x-icon">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,22 +24,22 @@
         <script src="scripts/time.js" defer></script>
         <script src="scripts/gridlist.js" defer></script>
         <script src="scripts/getdata.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
     </head>
     <body>
         <header>
              <div id="header-logo">
                 <div id="title">
                     <img id="img-logo" src="images/nigeria-flag.jpg" alt="Logo of the website" width="60" height="40"> 
-                    <span>Commerce</span>
+                    <span>Lagos-CHB</span>
                 </div>
              
                  <nav id="menu-nav">
-                    <a href="#">Home</a>
+                     <a href="index.html">Home</a>
                     <a href="#">Discover</a>
-                    <a href="#">Directory</a>
+                    <a href="directory.html">Directory</a>
                     <a href="#">Join</a>
                     <a href="#">About</a>
-                    <a href="#">Podcast</a>
                 </nav>
 
                  <div id="menu"> 
@@ -69,16 +69,9 @@
                     <h2 class="h2-heading">Current Weather</h2>
                     <div class="weather">
                         <img id="moon-cloud" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="70" width="70">
-                        <p>
-                            75<sup>o</sup>F<br>
-                            Party Cloudy <br>
-                            High: 85<sup>o</sup> <br>
-                            Low: 52<sup>o</sup><br>
-                            Humidity: 34<sup>o</sup><br>
-                            Sunrise: 7:30am <br>
-                            Sunset: 9:59pm <br>
-
-                        </p>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <p id="humidity"></p>
                     </div>
                 </div>
                 <div class="card">
