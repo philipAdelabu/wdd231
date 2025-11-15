@@ -69,15 +69,21 @@ const showData = async () => {
             const li_1 = document.createElement('li');
             const li_2 = document.createElement('li');
             const li_3 = document.createElement('li');
+            const li_4 = document.createElement('li');
             li_1.innerHTML = "<strong>Address</strong> : "+ element.address;
             li_2.innerHTML = "<strong>Phone</strong> : "+ element.phone;
-            li_3.innerHTML = "<strong>URL</strong> : "+ element.url;
+            const a = document.createElement('a');
+            a.setAttribute('href', element.url);
+            a.textContent = "Visit Website";
+            li_3.innerHTML = "<strong>Website URL</strong> : "+ a.outerHTML;
+            li_4.innerHTML = "<strong>Membership Level</strong> : "+ (element.membership.member ? "<span class='member-level'>Member,</span>" : "") + (element.membership.silver ? " <span class='silver-level'>Silver,</span>" : "") + (element.membership.gold ? " <span class='gold-level'>Gold</span>" : "");
         ul.appendChild(li_1);
         ul.appendChild(li_2);
         ul.appendChild(li_3);
         div3.appendChild(ul);
         div1.appendChild(div2);
         div1.appendChild(div3);
+        ul.appendChild(li_4);
         section.appendChild(div1);
       });
     }

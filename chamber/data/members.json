@@ -3,12 +3,12 @@
         "name":"Monie point",
         "address": "45th GRA street, Ikeja-Lagos",
         "phone": "+234-09056-90084",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo2.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":true,
+            "gold":false
         },
         "other":"Sell Clothes"
     },
@@ -16,12 +16,12 @@
         "name":"System Katalyst Ltd",
         "address": "13 Power-Line, Abule-Egba, Ibadan",
         "phone": "+234-08041-65080",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo3.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":true,
+            "gold":false
         },
         "other":"House Agent"
     },
@@ -29,12 +29,12 @@
         "name":"Paulina Store",
         "address": "320 street, Oshodi Market, Lagos",
         "phone": "+234-070 3400-0090",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo1.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":false,
+            "gold":false
         },
         "other":"Drugs and Medicine"
     },
@@ -42,12 +42,12 @@
         "name":"Eso-erick Tech",
         "address": "6 street, Victoria Island, Lagos",
         "phone": "+234-080-3222-7672",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo4.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":true,
+            "gold":true
         },
         "other":"Exporter & Importer"
     },
@@ -55,12 +55,12 @@
         "name":"Monie point",
         "address": "45th GRA street, Ikeja-Lagos, Nigeria",
         "phone": "+234-09056-90084",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo5.jpg",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":true,
+            "gold":false
         },
         "other":"Sell Clothes"
     },
@@ -68,12 +68,12 @@
         "name":"Monie point",
         "address": "45th GRA street, Ikeja-Lagos, Nigeria",
         "phone": "+234-09056-90084",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo1.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":false,
+            "gold":true
         },
         "other":""
     },
@@ -81,12 +81,12 @@
         "name":"Fruit Connection",
         "address": "72 Avenue, Owoloda, Kwara State",
         "phone": "070-9956-90084",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo2.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":true,
+            "gold":false
         },
         "other":"Tomatoes and Onions"
     },
@@ -94,12 +94,12 @@
         "name":"Kristal Ball Ltd",
         "address": "10 street, Ikeja, Lagos",
         "phone": "+234-08056-21034",
-        "web-url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
+        "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo4.png",
         "membership": {
-            "member":1,
-            "silver":2,
-            "gold":3
+            "member":true,
+            "silver":false,
+            "gold":false
         },
         "other":"Dry-Cleaner"
     }
