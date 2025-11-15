@@ -306,19 +306,22 @@ a {
     width: 90%;
     height: auto;
 }
+
+.member-level, .silver-level, .gold-level {
+    font-size: 12px;
+    font-weight: bold;
+}   
+
 .member-level {
     color: var(--primary-color);
-    font-weight: bold;
 }
 
 .silver-level {
-    color: silver;
-    font-weight: bold;
+    color: rgb(221, 109, 109);
 }
 
 .gold-level {
-    color: gold;
-    font-weight: bold;
+    color: #a12d19;
 }
 
 footer{
