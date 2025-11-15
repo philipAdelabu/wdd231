@@ -5,14 +5,23 @@
      #header-logo {
         justify-content: start;
         align-self: start;
+        background-color: var(--first-level-color);
+        color: #fff;
+        padding: 5px;
      }
+
+     #img-logo {
+        margin-left: 10px;
+        border: 1px solid #fff;
+     }   
 
  
      #menu-nav {
         display: flex;
         flex-direction: row;
-        padding: 10px 0px;
-        background-color: #fff;
+        padding: 0px;
+        margin-bottom: 5px;
+        background-color: var(--first-level-color);
        justify-content: flex-end;
        width: fit-content;
        margin-right: 10px;
@@ -21,18 +30,9 @@
 
    #menu-nav a {
       list-style-type: none;
-      color: #000;
+      color: #fff;
       text-decoration: none;
       border-bottom: none;
-   }
-
-
-
-   #menu-nav a:hover{
-      color: #fff;
-      cursor: pointer;
-      font-weight: bold;
-      background-color: #0e0d0d;;
    }
 
      #about-info{

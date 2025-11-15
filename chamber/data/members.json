@@ -7,7 +7,7 @@
         "image":"../chamber/images/logos/logo2.png",
         "membership": {
             "member":true,
-            "silver":true,
+            "silver":false,
             "gold":false
         },
         "other":"Sell Clothes"
@@ -19,7 +19,7 @@
         "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo3.png",
         "membership": {
-            "member":true,
+            "member":false,
             "silver":true,
             "gold":false
         },
@@ -32,9 +32,9 @@
         "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo1.png",
         "membership": {
-            "member":true,
+            "member":false,
             "silver":false,
-            "gold":false
+            "gold":true
         },
         "other":"Drugs and Medicine"
     },
@@ -46,7 +46,7 @@
         "image":"../chamber/images/logos/logo4.png",
         "membership": {
             "member":true,
-            "silver":true,
+            "silver":false,
             "gold":true
         },
         "other":"Exporter & Importer"
@@ -59,7 +59,7 @@
         "image":"../chamber/images/logos/logo5.jpg",
         "membership": {
             "member":true,
-            "silver":true,
+            "silver":false,
             "gold":false
         },
         "other":"Sell Clothes"
@@ -71,7 +71,7 @@
         "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo1.png",
         "membership": {
-            "member":true,
+            "member":false,
             "silver":false,
             "gold":true
         },
@@ -84,7 +84,7 @@
         "url": "https://philipadelabu.github.io/wdd231/chamber/directory.html",
         "image":"../chamber/images/logos/logo2.png",
         "membership": {
-            "member":true,
+            "member":false,
             "silver":true,
             "gold":false
         },
