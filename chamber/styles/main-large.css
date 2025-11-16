@@ -7,7 +7,9 @@
         align-self: start;
         background-color: var(--first-level-color);
         color: #fff;
-        padding: 5px;
+        padding: 18px 5px;
+        margin-bottom: 0px;
+
      }
 
      #img-logo {
@@ -20,7 +22,6 @@
         display: flex;
         flex-direction: row;
         padding: 0px;
-        margin-bottom: 5px;
         background-color: var(--first-level-color);
        justify-content: flex-end;
        width: fit-content;
@@ -45,7 +46,6 @@
       width: 90%;
       }
 
-      
      .business-cards{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -80,5 +80,20 @@
      .weather p{
        font-size: 13px;
      }
+
+     
+   .cta-container h1 {
+      font-size: 30px;
+      margin-top: 20px;
+   }
+
+   .cta-container p {
+      margin-bottom: 24px;
+   }
+
+   .cta-button {
+      padding: 10px 20px;
+      font-size: 16px;
+   }
 
 }

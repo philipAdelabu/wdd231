@@ -31,9 +31,9 @@ header {
     flex-direction: row;
     align-content: space-between;
     border-bottom: 1px solid var(--first-level-color);
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     margin-top: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
 #header-logo:first-child {
@@ -70,7 +70,8 @@ main{
 /* Nav bar section */
 #menu-nav  {
     position: absolute;
-    top: 85px;
+    z-index: 2;
+    top: 70px;
     right: 0px;
     width: 40%;
     height: 100%;
@@ -163,7 +164,7 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 .card > .weather {
@@ -317,7 +318,7 @@ a {
 }
 
 .silver-level {
-    color: rgb(221, 109, 109);
+    color: rgb(14, 46, 2);
 }
 
 .gold-level {
@@ -330,4 +331,43 @@ footer{
     background-color: var(--second-level-color);
     padding: 20px;
     margin-top: 40px;
+}
+
+/* Call To Action place over the hero image */
+
+#hero-container {
+    position: relative;
+   text-align: center;
+   display: inline-block;
+   max-width: 100%;
+}
+
+.cta-container {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.cta-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.cta-container p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.cta-button {
+    background-color: #0b1533;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 12px;
 }
