@@ -345,29 +345,28 @@ footer{
 .cta-container {
     position: absolute;
     text-align: center;
-    color: white;
-    font-size: 18px;
+    color: white;;
     top: 20%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 .cta-container h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 .cta-container p {
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 .cta-button {
     background-color: #0b1533;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 15px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
 }
