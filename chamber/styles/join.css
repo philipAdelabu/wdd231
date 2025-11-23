@@ -29,12 +29,8 @@ h1 {
     color: var(--first-level-color);
     margin-bottom: 30px;
 }
+
 .h2-heading {
-    background-color: var(--first-level-color);
-    color: white;
-    padding: 0.5rem 0.75rem;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     text-align: center;
 }
 
