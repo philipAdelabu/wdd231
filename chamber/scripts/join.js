@@ -1,14 +1,14 @@
-const title = /^[a-zA-Z  -]{7}$/;
+const title = /^[a-zA-Z  -]{7,}$/;
 
 const form = document.getElementById('form');
 
 form.addEventListener('submit', (event) => {
     const titleValue = document.getElementById('btitle').value;
-    if (!title.test(titleValue)) {
+    if (titleValue.length > 0 && !title.test(titleValue)) {
         errorMessage('Business title requires  7 characters, letters, spaces, or hyphens only');
         event.preventDefault();
         return;
-    } 
+     } 
     
     const emailValue = document.getElementById('email').value;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -17,8 +17,10 @@ form.addEventListener('submit', (event) => {
         event.preventDefault();
         return;
     }
+
+    //document.lastModified
     const timestamp = document.getElementById('timestamp');
-    timestamp.value = new Date().toISOString();
+    timestamp.value = document.lastModified;
     // Additional validation can be added here as needed
 });
 

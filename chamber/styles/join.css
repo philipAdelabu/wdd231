@@ -182,4 +182,29 @@ label {
 
 
 
+th {
+    text-align: left;
+}
+td {
+    text-align: left;
+    padding-left: 8px;
+}
+
+#thankyou {
+    margin:  5% auto;
+    width: 400px;
+    padding: 10px;
+    box-shadow: 4px 3px 6px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: #eee;
+}
+
+#thankyou > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: green;
+}
+
+
+
 
