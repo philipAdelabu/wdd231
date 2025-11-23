@@ -61,24 +61,24 @@
               <section class="signup-section">
                 <div class="card-form">
                     <h2 class="h2-heading">Registration Form</h2>
-                    <form id="form" action="thankyou.html" method="GET">
+                    <form autocomplete="on" id="form" action="thankyou.html" method="GET">
                         <label for="fname">First Name:</label>
-                        <input autocomplete="on" type="text" id="fname" name="fname" required><br>
+                        <input autocomplete="given-name" type="text" id="fname" name="fname" required><br>
 
                         <label for="lname">Last Name:</label>
-                        <input autocomplete="one" type="text" id="lname" name="lname" required><br>
+                        <input autocomplete="family-name" type="text" id="lname" name="lname" required><br>
                          
-                        <label for="btitle">Business Title:</label>
-                        <input type="text" autocomplete="on" id="btitle" name="btitle"><br>
+                        <label for="btitle">Organization Title:</label>
+                        <input type="text" autocomplete="organization-title" id="btitle" name="btitle"><br>
 
                         <label for="email">Business Email:</label>
-                        <input autocomplete="on" type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
+                        <input autocomplete="email" type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
                           
                         <label for="phone">Organization Phone Contact:</label>
-                        <input autocomplete="on" type="text" id="phone" name="phone" required><br>
+                        <input autocomplete="tel" type="text" id="phone" name="phone" required><br>
 
                         <label for="bname">Business Name:</label>
-                        <input autocomplete="on" type="text" id="bname" name="bname" required><br>
+                        <input autocomplete="organization" type="text" id="bname" name="bname" required><br>
                          
                         <label for="type">Business Type:</label>
                         <select id="type" name="type">
@@ -89,7 +89,7 @@
                             <option value="Gold Membership">Gold Membership</option>
                         </select><br>
                         <label for="description">Business Description:</label>
-                        <textarea autocomplete="on" id="description" name="discription" rows="6" cols="30" placeholder="Additional Information"></textarea><br>
+                        <textarea title="text" id="description" name="discription" rows="6" cols="30" placeholder="Additional Information"></textarea><br>
                         <input type="hidden" id=timestamp name="timestamp">
                         <br>
                         <input type="submit" value="Submit">
