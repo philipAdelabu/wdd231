@@ -30,7 +30,7 @@ h1 {
     margin-bottom: 30px;
 }
 .h2-heading {
-    background-color: var(--primary-color);
+    background-color: var(--first-level-color);
     color: white;
     padding: 0.5rem 0.75rem;
     border-top-left-radius: 4px;
@@ -56,14 +56,12 @@ h1 {
 }
 
 .level h3 {
-    color: var(--first-level-color);
+    color: #fff;
     margin-bottom: 10px;
     margin-top: 10p;
 }
 
-.level li {
-    list-style: none;
-}
+
 
 .readmore {
     padding: 0.3rem;
@@ -74,7 +72,7 @@ h1 {
 
 .readmore:hover {
     text-decoration: underline;
-    color: var(--primary-color);
+    font-weight: bolder;
 }
 
 form {
@@ -204,6 +202,41 @@ td {
     margin-bottom: 20px;
     color: green;
 }
+
+
+@keyframes gradientMove {
+ 0% { background-position: 0% 50%; }
+ 50% { background-position: 100% 50%; }
+ 100% { background-position: 0% 50%; }
+}
+
+#non-profit-member {
+  background: linear-gradient(270deg, #2da822, #013508);
+   background-size: 400% 400%;
+   animation: gradientMove 12s ease infinite;
+}
+
+#silver-member{
+   background: linear-gradient(270deg, #0a615a, #033e41);
+   background-size: 400% 400%;
+   animation: gradientMove 6s ease infinite;
+}
+
+#bronze-member{
+    background: linear-gradient(270deg, #ce567e, #910362);
+   background-size: 400% 400%;
+   animation: gradientMove 10s ease infinite;
+}
+#bronze-member h3,  a {
+    color: #fff;
+}
+
+#gold-member{
+ background: linear-gradient(270deg, #ff7e5f, #bfcf29);
+ background-size: 400% 400%;
+ animation: gradientMove 8s ease infinite;
+}
+
 
 
 
