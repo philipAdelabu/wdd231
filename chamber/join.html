@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Philip Adelabu"> 
+        <meta name="description" content="A website to demonstrate the how chamber of commerce works.">
+        <meta property="og:title" content="Nigeria Chamber Commerce">
+        <meta property="og:description" content="The Nigeria Chamber Commerce for small scale business owners">
+        <meta property="og:image" content="https://philipadelabu.github.io/wdd231/chamber/images/banners/banner2.jpg">
+        <meta property="og:url" content="https://philipadelabu.github.io/wdd231/chamber/directory.html">
+
+        <title>Join The Nigeria Chamber of Commerce</title>
+        <link rel="icon" href="images/logo.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/main-large.css" rel="stylesheet">
+        <link href="styles/join.css" rel="stylesheet">
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/time.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+    </head>
+    <body>
+        <header>
+             <div id="header-logo">
+                <div id="title">
+                    <img id="img-logo" src="images/nigeria-flag.jpg" alt="Logo of the website" width="60" height="40"> 
+                    <span>Lagos-CHB</span>
+                </div>
+             
+                 <nav id="menu-nav">
+                     <a href="index.html">Home</a>
+                    <a href="#">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="#">About</a>
+                </nav>
+
+                 <div id="menu"> 
+                      <div id="menu-cross"> x </div>
+                      <div id="line-menu">
+                         <div class="menu-line"></div>
+                         <div class="menu-line"></div>
+                         <div class="menu-line"></div>
+                      </div>
+                 </div>
+                
+            </div>
+            <div id="hero-container">
+            <img id="hero" src="images/banners/banner.jpg" alt="Hero image for the Chamber commerce" loading="lazy" height="400" width="900">
+        
+           </div>
+        </header>
+        <main>
+                <h1>Join Us</h1>
+           
+              <section class="signup-section">
+                <div class="card-form">
+                    <h2 class="h2-heading">Registration Form</h2>
+                    <form id="form" action="thankyou.html" method="GET">
+                        <label for="fname">First Name:</label>
+                        <input autocomplete="on" type="text" id="fname" name="fname" required><br>
+
+                        <label for="lname">Last Name:</label>
+                        <input autocomplete="one" type="text" id="lname" name="lname" required><br>
+                         
+                        <label for="btitle">Business Title:</label>
+                        <input type="text" autocomplete="on" id="btitle" name="btitle" required><br>
+
+                        <label for="email">Business Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                          
+                        <label for="phone">Organization Phone Contact:</label>
+                        <input type="text" id="phone" name="phone" required><br>
+
+                        <label for="business">Business Name:</label>
+                        <input type="text" id="business" name="business" required><br>
+                         
+                        <label for="type">Business Type:</label>
+                        <select id="type" name="type" required>
+                            <option value="">Select Type</option>
+                            <option value="Non-Profit Membershish">Non-Profit Membershishp</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select><br>
+                        <label for="description">Business Description:</label>
+                        <textarea id="description" name="discription" rows="6" cols="30" placeholder="Additional Comments"></textarea><br>
+                        <input type="hidden" id=tiemstamp name="timestamp" value="">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="membership-info">
+                    <h2 class="h2-heading">Membership level</h2>
+                     <div class="membership-level">
+                        <div id="non-profit-member" class="level">
+                            <h3>Non-Profit Membership</h3>
+                             <a id="non-profit" href="#np" class="readmore">Read more</a>
+                        </div>
+                        <div id="bronze-member" class="level">
+                            <h3>Bronze Membership</h3>
+                             <a id="bronze" href="#bronze" class="readmore">Read more</a>
+                        </div>
+                        <div id="silver-member" class="level">
+                            <h3>Silver Membership</h3>
+                            <a  id="silver" href="#silver" class="readmore">Read more</a>
+                        </div>
+                        <div id="gold-member" class="level">
+                            <h3>Gold Membership</h3>
+                             <a id="gold" href="#gold" class="readmore">Read more</a>
+                        </div>
+                     </div>
+                </div>
+               
+              </section>
+
+            <div id="modal">
+                <div id="modal-content">
+                    <span id="close-button">&times;</span>
+                    <div id="content"></div>
+                    <button id="close-modal">Close</button>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+             <div>
+                <h4>Timbuktu Chamber of Commerce</h4>
+                <p>
+                   10 Rue De La Paix <br>
+                   Lagos, Nigeria 999 <br>
+                   info@lagoschamber.org <br>
+                   (223) 555-2300 <br>
+                </p>
+             </div>
+             <div id="social-link">
+                <span class="fa fa-linkedin"></span>
+                <span class="fa fa-github"></span>
+                <span class="fa fa-twitter"></span>
+             </div>
+             <div>
+                 <p>&copy; | Philip Adelabu | Lagos, Nigeria</p>
+                 <p><span id="lastModified"></span> <span id="currentyear"></span></p>
+             </div>
+        </footer>
+    </body>
+</html> 
