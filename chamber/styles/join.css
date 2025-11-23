@@ -109,7 +109,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #062b53;
 } 
 
 input, select, textarea {
@@ -177,8 +177,6 @@ label {
 #close-modal:hover {
     background-color: #0056b3;
 }
-
-
 
 
 th {
