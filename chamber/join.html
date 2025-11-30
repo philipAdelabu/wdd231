@@ -10,7 +10,7 @@
         <meta property="og:image" content="https://philipadelabu.github.io/wdd231/chamber/images/banners/banner2.jpg">
         <meta property="og:url" content="https://philipadelabu.github.io/wdd231/chamber/directory.html">
 
-        <title>Join The Nigeria Chamber of Commerce</title>
+        <title>Join Form For Chamber of Commerce</title>
         <link rel="icon" href="images/logo.ico" type="image/x-icon">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,25 +63,25 @@
                     <h2 class="h2-heading">Registration Form</h2>
                     <form autocomplete="on" id="form" action="thankyou.html" method="GET">
                         <label for="fname">First Name:</label>
-                        <input autocomplete="given-name" type="text" id="fname" name="fname" required><br>
+                        <input title="Enter First name" autocomplete="given-name" type="text" id="fname" name="fname" required><br>
 
                         <label for="lname">Last Name:</label>
-                        <input autocomplete="family-name" type="text" id="lname" name="lname" required><br>
+                        <input title="Enter Last name" autocomplete="family-name" type="text" id="lname" name="lname" required><br>
                          
                         <label for="btitle">Organization Title:</label>
-                        <input type="text" autocomplete="organization-title" id="btitle" name="btitle"><br>
+                        <input type="text" title="Enter the organization title" autocomplete="organization-title" id="btitle" name="btitle"><br>
 
                         <label for="email">Business Email:</label>
-                        <input autocomplete="email" type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
+                        <input title="Enter business email address" autocomplete="email" type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
                           
                         <label for="phone">Organization Phone Contact:</label>
-                        <input autocomplete="tel" type="text" id="phone" name="phone" required><br>
+                        <input  title="Enter the organization phone contact" autocomplete="tel" type="text" id="phone" name="phone" required><br>
 
                         <label for="bname">Business Name:</label>
-                        <input autocomplete="organization" type="text" id="bname" name="bname" required><br>
+                        <input title="Enter the business name" autocomplete="organization" type="text" id="bname" name="bname" required><br>
                          
                         <label for="type">Business Type:</label>
-                        <select id="type" name="type">
+                        <select title="Select Business Type" id="type" name="type">
                             <option value="">Select Type</option>
                             <option value="Non-Profit Membershish">Non-Profit Membershishp</option>
                             <option value="Bronze Membership">Bronze Membership</option>
@@ -89,7 +89,7 @@
                             <option value="Gold Membership">Gold Membership</option>
                         </select><br>
                         <label for="description">Business Description:</label>
-                        <textarea title="text" id="description" name="discription" rows="6" cols="30" placeholder="Additional Information"></textarea><br>
+                        <textarea title="Enter business description" id="description" name="discription" rows="6" cols="30" placeholder="Additional Information"></textarea><br>
                         <input type="hidden" id=timestamp name="timestamp">
                         <br>
                         <input type="submit" value="Submit">
