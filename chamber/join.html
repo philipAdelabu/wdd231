@@ -69,13 +69,13 @@
                         <input title="Enter Last name" autocomplete="family-name" type="text" id="lname" name="lname" required><br>
                          
                         <label for="btitle">Organization Title:</label>
-                        <input type="text" title="Enter the organization title" autocomplete="organization-title" id="btitle" name="btitle"><br>
+                        <input  pattern="[^[a-zA-Z  -]{7,}$]" type="text" title="Enter the organization title" autocomplete="organization-title" id="btitle" name="btitle"><br>
 
                         <label for="email">Business Email:</label>
                         <input title="Enter business email address" autocomplete="email" type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
                           
                         <label for="phone">Organization Phone Contact:</label>
-                        <input  title="Enter the organization phone contact" autocomplete="tel" type="text" id="phone" name="phone" required><br>
+                        <input  title="Enter the organization phone contact" autocomplete="tel" type="tel" id="phone" name="phone" required><br>
 
                         <label for="bname">Business Name:</label>
                         <input title="Enter the business name" autocomplete="organization" type="text" id="bname" name="bname" required><br>

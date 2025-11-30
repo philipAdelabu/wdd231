@@ -70,12 +70,12 @@ h1 {
 
 form {
     max-width: 99%;
-    margin: 0 auto;
+    margin: 0;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 form * {
@@ -83,7 +83,7 @@ form * {
     width: 100%;
 }
 
-input[type="text"],
+input[type="text"], input[type="tel"],
 input[type="email"],
 select{
     padding: 0.5rem;
@@ -91,7 +91,7 @@ select{
     border-radius: 4px;
     font-size: 1rem;
 }
-input[type="text"]:focus,
+input[type="text"]:focus, input[type="tel"]:focus,
 input[type="email"]:focus {
     border-color: #007BFF;
     outline: none;
