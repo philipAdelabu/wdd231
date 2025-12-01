@@ -23,8 +23,9 @@ main {
 header, footer {
     height: 70px;
     width: 98%;
-    border: 1px solid var(--seconday-color);
-    margin-top: 5px;
+    border: 2px solid var(--seconday-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #logo {
