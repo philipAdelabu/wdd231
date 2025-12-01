@@ -21,10 +21,17 @@ main {
 }
 
 header, footer {
-    height: 80px;
+    height: 70px;
     width: 98%;
     border: 1px solid var(--seconday-color);
     margin-top: 5px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    border: 1px dashed black;
+    margin: 4px;
 }
 
 
@@ -50,21 +57,52 @@ tr  td, th {
 
  
 .cards {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 4px;
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid var(--seconday-color)
+    border: 1px solid var(--seconday-color);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .card {
-    border: 1px solid blue;
+    border: 2px solid blue;
     display: flex;
     flex-direction: row;
+    align-content: center;
+    margin: 2px;
+    margin-bottom: 4px;
 }
 
-.card > img, div {
-    border: 1px solid black;
+.card > figure, div{
     margin: 2px; 
+}
+
+.card figure{
+   height: auto;
+   min-width: 140px;
+   border: 1px solid rgb(101, 205, 101);
+   margin: 2px;
+}
+.card div {
+    width: 98%;
+    height: auto;
+    border: 2px solid rgb(95, 11, 11);
+}
+.card div > h3 {
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+}
+.card div > .content {
+    border: 1px solid black;
+    margin: 2px;
+    height: 90px;
+} 
+
+.card div > .time{
+    border: 1px solid black;
+    margin: 2px;
+    height: 20px;
 }
 
