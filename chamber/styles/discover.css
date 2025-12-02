@@ -1,0 +1,160 @@
+.list-item {
+    display: grid;
+    grid-template-areas: "item";
+    width: 98%;
+    justify-items: center;
+}
+
+
+
+
+@media screen and (max-width: 640px){
+    .list-item{
+       grid-template-columns: 1fr;
+    } 
+   
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px){
+     .list-item{
+       grid-template-columns: 1fr 1fr;
+    } 
+
+    .item  {
+        width: 400px;
+       
+    }
+}
+
+@media screen and (min-width: 1025px){
+     .list-item{
+       grid-template-columns: 1fr 1fr 1fr;
+    } 
+
+    .item  {
+        width: 400px;
+       
+    }
+}
+
+
+.item {
+    border: 1px solid black;
+    padding: 3px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.4);
+    margin: 5px;
+}
+
+.item:hover {
+    box-shadow: 1px 2px 1px 2px rgba(0,0,0,0.5);
+}
+
+.item img {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+.item address {
+    margin-top: 30px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.item > h2{
+    text-align: center;
+    margin: 5px;
+}
+.item > address, p , button{
+    margin: 5px;
+}
+
+.item > button {
+    background-color: var(--first-level-color);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border:none;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.item > button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+
+/* Modal Styles */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--first-level-color);
+}   
+#modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+}
+#close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;        
+    font-weight: bold;
+    cursor: pointer;
+}
+#close-button:hover,
+#close-button:focus {
+    color: black;   
+    text-decoration: none;
+    cursor: pointer;
+}
+#close-modal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;   
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;   
+    font-size: 1rem;
+    cursor: pointer;
+}
+#close-modal:hover {
+    background-color: var(--primary-color);
+}
+
+
+th {
+    text-align: left;
+}
+td {
+    text-align: left;
+    padding-left: 8px;
+}
+
+#thankyou {
+    margin:  5% auto;
+    width: 400px;
+    padding: 10px;
+    box-shadow: 4px 3px 6px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: #eee;
+}

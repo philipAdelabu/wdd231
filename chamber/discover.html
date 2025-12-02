@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
         <meta property="og:image" content="https://philipadelabu.github.io/wdd231/chamber/images/banners/banner2.jpg">
         <meta property="og:url" content="https://philipadelabu.github.io/wdd231/chamber/directory.html">
 
-        <title>Nigeria Chamber of Commerce Home Page</title>
+        <title>Discorver Sites</title>
         <link rel="icon" href="images/logo.ico" type="image/x-icon">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="styles/main.css" rel="stylesheet">
         <link href="styles/main-large.css" rel="stylesheet">
+        <link href="styles/discover.css" rel="stylesheet">
         <script src="scripts/menu.js" defer></script>
-        <script src="scripts/course.js" defer></script>
         <script src="scripts/time.js" defer></script>
-        <script src="scripts/gridlist.js" defer></script>
-        <script type="module" src="scripts/randmember.js"></script>
-        <script src="scripts/getweather.js" defer></script>
+        <script type="module" src="scripts/discover.js"></script>
+   
     </head>
     <body>
         <header>
@@ -51,61 +50,29 @@
                  </div>
                 
             </div>
-            <div id="hero-container">
             <img id="hero" src="images/banners/banner.jpg" alt="Hero image for the Chamber commerce" loading="lazy" height="400" width="900">
-            <div class="cta-container">
-                <h1>Welcome to Lagos Chamber of Commerce</h1>
-                <p>Your Gateway to Business Opportunities</p>
-                <a href="#signup" class="cta-button">Sign Up Now</a>
-            </div>
-           </div>
+               
         </header>
         <main>
         
-              <h1>Home</h1>
-              <section id="about-info">
-                <div class="card">
-                    <h2 class="h2-heading">Events</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sunt maiores labore laborum fugiat hic facere cum architecto eius dolore reprehenderit natus doloribus error autem, velit, sint sit est aliquam repellat voluptate excepturi dolorem. Ducimus delectus suscipit veritatis. Quae enim labore placeat aperiam inventore quia, error nam tempore necessitatibus, illo velit natus mollitia molestiae minima quidem autem? Tenetur magnam nam ratione quam odit eligendi! Odit, dolore molestias delectus dolores ut repellat autem dolorum totam dolorem quos voluptatum expedita perspiciatis, consectetur natus quidem culpa minima ea voluptatem quas eaque? Veritatis eum odit id qui itaque laborum, quasi ipsum tempora quos perferendis?
-                    </p>
-                </div>
-                <div class="card">
-                    <h2 class="h2-heading">Current Weather</h2>
-                    <div class="weather">
-                        <img id="weathericon" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="40" width="40">
-                        <p>
-                            <span id="temperature"></span><br>
-                            <span id="description"></span><br>
-                            <span id="humidity"></span><br>
-                       </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <h2 class="h2-heading">Weather Forecast</h2>
-                    <div class="weather">
-                        <p>
-                             <span id="day1-temp"></span><br><br>
-                             <span id="day2-temp"></span><br><br>
-                             <span id="day3-temp"></span><br>
-                         </p>
-                    </div>
-                </div>
-              </section>
+              <h1>Discover</h1>
+    
+        
+              <section id="dir-display" class="list-item"></section> 
 
-              <section>
-                  <div id="toggle">
-                    <div id="grid" class="toggle-button">Grid</div>
-                    <div id="list" class="toggle-button">List</div>
-                  </div>
-              </section>
-              <section id="display" class="business-cards-list"></section> 
+               <div id="modal">
+                <div id="modal-content">
+                    <span id="close-button">&times;</span>
+                    <div id="content"></div>
+                    <button id="close-modal">Close</button>
+                </div>
+            </div>
         </main>
         <footer>
              <div>
                 <h4>Timbuktu Chamber of Commerce</h4>
                 <p>
-                   10 Rue De La Paix <br>
+                  10 Rue De La Paix <br>
                    Lagos, Nigeria 999 <br>
                    info@lagoschamber.org <br>
                    (223) 555-2300 <br>
