@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Philip Adelabu"> 
+        <meta name="description" content="A News Aggregator website application. An api news is used to aggregate news across the world. ">
+    
+        <title>News Aggregator</title>
+        <link rel="icon" href="images/logo.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles/news-main.css" rel="stylesheet">
+        <link href="styles/news-main-large.css" rel="stylesheet">
+        <link href="styles/modal.css" rel="stylesheet">
+
+        <script type="module" src="scripts/news.js"></script>
+         <script src="scripts/menu.js" defer></script>
+        <script src="scripts/time.js" defer></script>
+        <script src="scripts/getweather.js" defer></script>
+  
+     
+    </head>
+    <body>
+             <header>
+             <div id="header-logo">
+                <div id="title">
+                    <img id="img-logo" src="images/nigeria-flag.jpg" alt="Logo of the website" width="60" height="40"> 
+                    <span>News</span>
+                </div>
+                <div></div>
+                 <div id="menu"> 
+                      <div id="menu-cross"> x </div>
+                      <div id="line-menu">
+                         <div class="menu-line"></div>
+                         <div class="menu-line"></div>
+                         <div class="menu-line"></div>
+                      </div>
+                 </div>
+                
+            </div>
+             
+            <nav id="menu-nav">
+               <a  href="index.html">Home</a>
+               <a href="sport.html">Sport</a>
+               <a href="global.html">Global</a>
+               <a href="news.html">News</a>
+               <a href="technology.html">Technology</a>
+               <a href="about.html">About</a>
+               <a href="subscribe.html">Subscribe</a>
+            </nav>
+        </header>
+        <main>
+            <h1 id="news-section"></h1>
+          <section id="news-weather">
+                    <div id="random-news"></div>
+           
+                    <div class="weather">
+                        <h2>Weather Forecast</h2>
+                        <img id="weathericon" src="images/icons/moon-cloud.svg" alt="Icon image for moon clould" height="40" width="40">
+                        <p>
+                            <span id="temperature"></span><br>
+                            <span id="description"></span><br>
+                            <span id="humidity"></span><br>
+                       </p>
+                    </div>
+            
+          </section>
+  
+           <section id="card-display" class="cards"></section>
+          
+        </main>
+
+        <footer>
+            <p>&copy; | Philip Adelabu | Nigeria, Lagos</p>
+            <p>
+                <span id="lastModified"></span> <span id="currentyear"></span>
+            </p><br>
+            <a href="#">Project Video Link</a>
+        </footer>
+    </body>
+</html> 

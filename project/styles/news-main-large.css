@@ -1,0 +1,31 @@
+@media screen and (min-width: 580px){ 
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 4px 10px;
+    }
+
+
+    #menu{
+        display: none;
+     }
+     #header-logo {
+        justify-content: start;
+        align-self: start;
+     }
+
+ 
+     #menu-nav {
+        display: block;
+        padding: 20px 0px;
+     }
+
+     #menu-nav a {
+        border: 0px;
+     }
+
+    #news-weather {
+    grid-template-columns: 2fr 1fr;
+  }
+
+   }
