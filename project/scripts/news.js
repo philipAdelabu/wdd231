@@ -134,23 +134,6 @@ function msToDay(ms){
   return  (Date.now() - ms) / oneday;
 }
 
-const modal = document.getElementById('modal');
-const closeButton = document.getElementById('close-button');
-const closeModalButton = document.getElementById('close-modal');
-
-closeButton.onclick = function() {
-    modal.style.display = "none";
-}
-
-closeModalButton.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 
 function displayModal(msg){
@@ -182,7 +165,8 @@ const showModal = () => {
   displayModal(message);
 }
 
-showModal();
+
+
 
 function extractTitle(str){
   // id": "world/live/2025/dec/02/ukraine-war-live-trump-peace-deal-witkoff-to-meet-putin",
@@ -216,5 +200,30 @@ function extractTitle(str){
        showData(dirdisplay, uri);   
 
    }
+
+
+   const modal = document.getElementById('modal');
+const closeButton = document.getElementById('close-button');
+const closeModalButton = document.getElementById('close-modal');
+
+if(modal != undefined){
+
+closeButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+closeModalButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+
+  showModal();
+}
+
 
 
