@@ -115,6 +115,6 @@ function parseData(element, sect){
 
 //showData();
 
-const dirdisplay = document.querySelector('#dir-display');
+const dirdisplay = document.querySelector('#display');
 if(dirdisplay != undefined)
-    showData('dir-display');
+    showData('display');
