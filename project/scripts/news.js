@@ -207,7 +207,7 @@ const modal = document.getElementById('modal');
 const closeButton = document.getElementById('close-button');
 const closeModalButton = document.getElementById('close-modal');
 
-if(modal !== undefined){
+if(modal != undefined){
 
 closeButton.onclick = function() {
     modal.style.display = "none";
