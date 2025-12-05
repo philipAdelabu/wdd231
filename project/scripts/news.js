@@ -185,6 +185,7 @@ function extractTitle(str){
  
 
    const hrf = window.location.pathname;
+   console.log("The path: " + hrf);
    getPageName(hrf);
 
    function getPageName(hrf){
@@ -202,11 +203,11 @@ function extractTitle(str){
    }
 
 
-   const modal = document.getElementById('modal');
+const modal = document.getElementById('modal');
 const closeButton = document.getElementById('close-button');
 const closeModalButton = document.getElementById('close-modal');
 
-if(modal != undefined){
+if(modal !== undefined){
 
 closeButton.onclick = function() {
     modal.style.display = "none";
