@@ -202,30 +202,30 @@ td {
 }
 
 #non-profit-member {
-  background: linear-gradient(270deg, #2da822, #013508);
+  background: linear-gradient(270deg, #2da822, #081d0b);
    background-size: 400% 400%;
-   animation: gradientMove 12s ease infinite;
+   animation: gradientMove 5s ease infinite;
 }
 
 #silver-member{
-   background: linear-gradient(270deg, #0a615a, #033e41);
+   background: linear-gradient(270deg, #4a959c, #000303);
    background-size: 400% 400%;
-   animation: gradientMove 6s ease infinite;
+   animation: gradientMove 3s ease infinite;
 }
 
 #bronze-member{
-    background: linear-gradient(270deg, #ce567e, #910362);
+    background: linear-gradient(270deg, #ce567e, #0b0208);
    background-size: 400% 400%;
-   animation: gradientMove 10s ease infinite;
+   animation: gradientMove 2s ease infinite;
 }
 #bronze-member h3,  a {
     color: #fff;
 }
 
 #gold-member{
- background: linear-gradient(270deg, #ff7e5f, #bfcf29);
+ background: linear-gradient(270deg, #ff7e5f, #1a1c0d);
  background-size: 400% 400%;
- animation: gradientMove 8s ease infinite;
+ animation: gradientMove 1s ease infinite;
 }
 
 
